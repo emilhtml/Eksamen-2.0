@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="aktiviteter.css">
+  <script src="forside.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="aktiviteter.js"></script>
+
+  <style>
+    .like-button {
+      cursor: pointer;
+      color: #999;
+    }
+
+    .liked {
+      color: #3b5998;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Aktiviteter</h1>
+      <nav>
+        <ul>
+          <li><a href="forside.html">Forside</a></li>
+          <li><a href="#" onclick="redirectToPage('aktiviteter.html')">Aktiviteter</a></li>
+          <li><a href="#" onclick="redirectToPage('medlemsliste.html')">Medlemsliste</a></li>
+          <li><a href="#" onclick="redirectToPage('elevrådet.html')">Vær en del af elevrådet</a></li>
+          <li><a href="#" onclick="redirectToPage('læsmere.html')">Læs mere</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+        <div class="begivenhed">
+            <img src="Translokation.jpg">
+            <h2>Translokation på Virum Gymnasium fredag d. 23. juni 2023 kl. 10.00</h2>
+            <p id="undertekst"> Virum Gymnasium holder translokation for årets studenter og deres familier fredag d. 23. juni 2023, kl. 10-12.
+              Translokationen afholdes i VG-hallen, dørene åbnes kl. 9.30. Studenterne har indmarch kl. 10.00 og skal være på skolen senest 9.30 i stille op til indmarch på matematik-gangen.
+              Hver student får 3 gæstebilletter til siddepladser ved translokationen, når alle bøger er afleveret eller betalt. Alle bøger, der er lånt på Virum Gymnasium, skal returneres.
+              Bemærk, at der ikke er mulighed for parkering ved gymnasiet på translokationsdagen, idet studentervognene holder her.
+              Vi ser frem til en flot og festlig fejring af årets studenter.</p>
+            <button class="like-button" onclick="toggleLike(this)"><i class="far fa-thumbs-up"></i></button>
+        </div>
+  
+        <div class="begivenhed">
+          <img src="VGV.jpg" >
+          <h2>VGV inviterer til jubilæumstræf d. 10. juni 2023</h2>
+          <p id="undertekst"> Hvis du ikke nåede at købe billet til jubilæumstræffet d. 10. juni og gerne vil med, så kan du stadig nå det.
+            Ring på 45832141 og spørg efter Anne Carlsson.
+            Vi glæder os til at se jer.</p>
+          <button class="like-button" onclick="toggleLike(this)"><i class="far fa-thumbs-up"></i></button>
+        </div>
+  
+    </div>
+
+  </body>
+  
+</html>
+
+
+
+
+
+
+

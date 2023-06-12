@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="elevrådet.css">
+  <script src="elevrådet.js"></script>
+  <script src="forside.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>VG's Elevråd</h1>
+      <nav>
+        <ul>
+          <li><a href="forside.html">Forside</a></li>
+          <li><a href="#" onclick="redirectToPage('aktiviteter.html')">Aktiviteter</a></li>
+          <li><a href="#" onclick="redirectToPage('medlemsliste.html')">Medlemsliste</a></li>
+          <li><a href="#" onclick="redirectToPage('elevrådet.html')">Vær en del af elevrådet</a></li>
+          <li><a href="#" onclick="redirectToPage('læsmere.html')">Læs mere</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-section">
+     <h2>Er du elevrådsmedlem eller ønsker du at være elevrådsmedlem?</h2>
+      <p>Udfyld formularen herunder for at komme på vores medlemsliste:</p>
+      <form id="member-form">
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="class">Klasse:</label>
+        <input type="text" id="class" name="class" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="social-media">Sociale medier (Facebook eller Instagram):</label>
+        <input type="text" id="social-media" name="social-media" required>
+
+        <button type="submit" onclick="createUser()">Tilmeld dig</button>
+      </form>
+    </section>
+    <footer>
+      &copy; 2023 VG's Elevråd. Alle rettigheder forbeholdes.
+    </footer>
+  </div>
+
+</body>
+</html>
